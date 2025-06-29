@@ -2,20 +2,22 @@ import ProjectsText from "./ProjectsText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
+import image1 from '../../assets/screencapture-plant-management-client-web-app-2025-06-29-14_05_16.png'
+import image2 from '../../assets/screencapture-service-hub-ffbec-web-app-2025-06-29-14_06_15.png'
 
 const projects = [
   {
     name: "PlantNest",
     year: "Apr2025",
     align: "right",
-    image: "../../public/images/website-img-1.jpg",
+    image: image1,
     link: "https://plant-management-client.web.app/",
   },
   {
     name: "ServiceHub",
     year: "May2025",
     align: "left",
-    image: "../../public/images/website-img-2.webp",
+    image: image2,
     link: "https://service-hub-ffbec.web.app/",
   },
   // {
@@ -54,6 +56,7 @@ const ProjectsMain = () => {
               year={project.year}
               align={project.align}
               image={project.image}
+              link={project.link} 
             />
           );
         })}
