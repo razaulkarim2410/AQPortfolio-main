@@ -3,22 +3,30 @@ import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 import image1 from '../../assets/screencapture-plant-management-client-web-app-2025-06-29-14_05_16.png'
-import image2 from '../../assets/screencapture-service-hub-ffbec-web-app-2025-06-29-14_06_15.png'
+import image2 from '../../assets/screencapture-service-hub-ffbec-web-app-2025-07-31-13_20_02.png'
+import image3 from '../../assets/screencapture-hr-pulse-b9fea-web-app-2025-07-31-17_49_49.png'
 
 const projects = [
   {
     name: "PlantNest",
-    year: "Apr2025",
+    year: "July 2025",
     align: "right",
-    image: image1,
-    link: "https://plant-management-client.web.app/",
+    image: image3,
+    link: "https://hr-pulse-b9fea.web.app/",
   },
   {
     name: "ServiceHub",
-    year: "May2025",
+    year: "June 2025",
     align: "left",
     image: image2,
     link: "https://service-hub-ffbec.web.app/",
+  },
+  {
+    name: "PlantNest",
+    year: "May 2025",
+    align: "right",
+    image: image1,
+    link: "https://plant-management-client.web.app/",
   },
   // {
   //   name: "Tourzania",

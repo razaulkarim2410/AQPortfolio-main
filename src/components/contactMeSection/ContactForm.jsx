@@ -1,25 +1,18 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState("");
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handleMessage = (e) => {
-    setMessage(e.target.value);
-  };
   const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
+
     emailjs
-      .sendForm("service_ko3hmpt", "template_ahbmmqd", form.current, {
+      .sendForm("service_1hthni4", "template_ahbmmqd", form.current, {
         publicKey: "I6HAT5mUZH7WHabGE",
       })
       .then(
@@ -27,17 +20,28 @@ const ContactForm = () => {
           setEmail("");
           setName("");
           setMessage("");
-          setSuccess("Message Sent Succesfully");
+
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent!",
+            text: "Your message was sent successfully.",
+            confirmButtonColor: "#3085d6",
+          });
         },
         (error) => {
           console.log("FAILED...", error.text);
+          Swal.fire({
+            icon: "error",
+            title: "Failed to Send",
+            text: "Please try again later.",
+            confirmButtonColor: "#d33",
+          });
         }
       );
   };
 
   return (
     <div>
-      <p className="text-cyan">{success}</p>
       <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
         <input
           type="text"
@@ -46,7 +50,7 @@ const ContactForm = () => {
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
           value={name}
-          onChange={handleName}
+          onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
@@ -55,18 +59,16 @@ const ContactForm = () => {
           required
           className="h-12 rounded-lg bg-lightBrown px-2"
           value={email}
-          onChange={handleEmail}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
-          type="text"
           name="message"
           rows="9"
-          cols="50"
           placeholder="Message"
           required
-          className=" rounded-lg bg-lightBrown p-2"
+          className="rounded-lg bg-lightBrown p-2"
           value={message}
-          onChange={handleMessage}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <button
           type="submit"
