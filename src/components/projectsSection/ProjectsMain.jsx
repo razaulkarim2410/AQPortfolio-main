@@ -8,7 +8,7 @@ import image3 from '../../assets/screencapture-hr-pulse-b9fea-web-app-2025-07-31
 
 const projects = [
   {
-    name: "PlantNest",
+    name: "HRPulse",
     year: "July 2025",
     align: "right",
     image: image3,
