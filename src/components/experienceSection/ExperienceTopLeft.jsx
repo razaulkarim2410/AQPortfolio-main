@@ -11,9 +11,9 @@ const ExperienceTopLeft = () => {
         <p className="font-bold text-6xl text-lightBrown">-</p>
         <ExperienceInfo number="3" text="Websites" />
       </div>
-      <p className="text-center">
-        With 8 months of experience building dynamic and user-friendly web
-        applications.
+      <p className="text-center text-lg">
+       With 8 months of hands-on experience developing dynamic, responsive, and user-friendly web applications using the MERN stack.
+
       </p>
       
     </div>
