@@ -144,7 +144,7 @@ const ContactForm = () => {
           className={`h-12 w-full rounded-lg border text-white font-semibold text-lg transition-all duration-300 ${
             loading
               ? "bg-gray-400 cursor-not-allowed"
-              : "bg-cyan hover:bg-darkCyan border-cyan"
+              : "hover:border-white hover:bg-darkOrange border border-orange"
           }`}
         >
           {loading ? "Sending..." : "Send Message"}

@@ -5,7 +5,7 @@ const NavbarLogo = () => {
          RAZAUL KARIM
 
       </h1>
-      <h1 className="text-white font-special font-extrabold text-2xl md:hidden sm:block">
+      <h1 className="text-white font-special font-extrabold md:text-2xl text-base  md:hidden sm:block">
         RAZAUL KARIM
       </h1>
     </div>
