@@ -1,7 +1,7 @@
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiFirebase, SiMongodb } from "react-icons/si";
+import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 
@@ -46,6 +46,10 @@ const skills = [
   {
     skill: "TailwindCSS",
     icon: RiTailwindCssFill,
+  },
+  {
+    skill: "NextJS",
+    icon: SiNextdotjs,
   },
 ];
 

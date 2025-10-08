@@ -4,7 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 
 import { FaReact } from "react-icons/fa";
-import { SiExpress, SiFirebase, SiMongodb, } from "react-icons/si";
+import { SiExpress, SiFirebase, SiMongodb, SiNextdotjs, } from "react-icons/si";
 
 import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
@@ -42,6 +42,10 @@ const skills = [
   {
     skill: "TailwindCSS",
     icon: RiTailwindCssFill,
+  },
+  {
+    skill: "NextJS",
+    icon: SiNextdotjs,
   },
 ];
 

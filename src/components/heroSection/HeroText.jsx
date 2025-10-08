@@ -32,12 +32,12 @@ const HeroText = () => {
         viewport={{ once: false, amount: 0 }}
         className="text-lg mt-4"
       >
-        Aspiring MERN Stack Developer skilled in MongoDB,   <br className="hidden md:block" /> Express.js, React.js, and Node.js, passionate about   <br className="hidden md:block" /> creating clean, responsive web  applications and eager   <br className="hidden md:block" /> to grow in a professional environment.
+        Aspiring MERN Stack Developer skilled in Next.js, <br className="hidden md:block" /> MongoDB, Express.js, React.js, and Node.js, passionate <br className="hidden md:block" /> about creating clean, responsive web  applications and <br className="hidden md:block" /> eager to grow in a professional environment.
       </motion.p>
 
       {/* Resume Button with Icon */}
       <motion.a
-        href="/Razaul_Karim_Resume.pdf"
+        href="/Razaul_Karim_Resume (3).pdf"
         target="_blank"
         rel="noopener noreferrer"
         variants={fadeIn("up", 0.8)}

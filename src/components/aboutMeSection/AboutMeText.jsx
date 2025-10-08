@@ -8,8 +8,8 @@ const AboutMeText = () => {
         Hi, I’m Razaul Karim — an aspiring MERN Stack Developer passionate about building scalable, responsive, and secure web applications.
         <br />
         <br />
-        I create clean, user-friendly interfaces with React.js, Tailwind CSS, and JavaScript, and work confidently on the backend with Node.js, Express.js, MongoDB, and Firebase.
-        I’ve built projects featuring JWT authentication, Stripe payment integration, and real-time data handling, giving me a strong full-stack foundation.
+        I create clean, user-friendly interfaces with Next.js, React.js, Tailwind CSS, and JavaScript, and work confidently on the backend with Node.js, Express.js, MongoDB, Mongoose and Firebase.
+        I’ve built projects featuring JWT and NextAuth OTP authentication, Stripe and SSLCommerz payment integration, and real-time data handling, giving me a strong full-stack foundation.
         <br />
         <br />
         Always eager to learn and adapt, I stay up to date with the latest technologies to craft impactful digital solutions. Let’s turn ideas into real-world web experiences!

@@ -26,7 +26,7 @@ const Education = () => {
             <p>
               Programming Hero <br />
               Completed: 2025 <br />
-              Skills: HTML, CSS, JavaScript, React.js, <br /> Node.js, Express.js, MongoDB, Tailwind CSS, Firebase, <br /> JWT Authentication, Stripe Payment Integration
+              Skills: HTML, CSS, JavaScript, React.js, <br /> Node.js, Express.js, MongoDB, Tailwind CSS, Firebase, <br /> JWT Authentication, Stripe Payment Integration <br/> Next.js, Mongoose, NextAuth (OTP), SSLCommerz
             </p>
           </div>
         </div>

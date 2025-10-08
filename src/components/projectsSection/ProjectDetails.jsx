@@ -29,15 +29,15 @@ const ProjectDetail = ({ project, goBack }) => {
       <h1 className="text-4xl font-bold text-orange mb-2">{name}</h1>
       <p className="text-gray-400 mb-6">{year}</p>
 
-      {/* Smaller Image */}
-      <div className="flex justify-center mb-6">
-        <img
-          src={image}
-          alt={`${name} screenshot`}
-          className="w-full max-w-2xl h-[50vh] object-cover rounded-lg shadow-lg border border-gray-700"
+     {/* Full-page Screenshot */}
+<div className="w-full h-screen overflow-auto p-4 bg-gray-800 mb-8 rounded-lg border border-gray-700">
+  <img
+    src={image}
+    alt={`${name} screenshot`}
+    className="w-full h-auto object-contain"
+  />
+</div>
 
-        />
-      </div>
 
 
       {/* Description */}
@@ -51,11 +51,7 @@ const ProjectDetail = ({ project, goBack }) => {
             {features.map((f, i) => (
               <li key={i}>{f}</li>
             ))}
-            <li>User authentication with JWT tokens</li>
-            <li>CRUD operations with MongoDB backend</li>
-            <li>RESTful API endpoints using Express.js</li>
-            <li>Responsive UI with Tailwind CSS</li>
-            <li>Payment integration via Stripe (if applicable)</li>
+            
             <li>Real-time updates and notifications</li>
           </ul>
         </>
@@ -75,9 +71,7 @@ const ProjectDetail = ({ project, goBack }) => {
               </span>
             ))}
             <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/20 text-gray-100">JWT</span>
-            <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/20 text-gray-100">REST API</span>
-            <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/20 text-gray-100">Axios</span>
-            <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/20 text-gray-100">Context API</span>
+
           </div>
         </>
       )}
