@@ -37,7 +37,7 @@ const HeroText = () => {
 
       {/* Resume Button with Icon */}
       <motion.a
-        href="/Razaul_Karim_Resume (3).pdf"
+        href="/Razaul_Karim_Resume (4).pdf"
         target="_blank"
         rel="noopener noreferrer"
         variants={fadeIn("up", 0.8)}
